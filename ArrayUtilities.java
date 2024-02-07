@@ -1,5 +1,14 @@
 public class ArrayUtilities {
 
+    public static int[] createRandomArray(int size) {
+        int[] arr = new int[size];
+        for (int i = 0; i < size; i ++)
+        {
+            arr[i] = (int)(Math.random()* 100);
+        }
+        return arr;
+    }
+
     public static String findAverage(int[] a){
         int sum = 0;
         for (int i = 0; i < a.length; i++){
