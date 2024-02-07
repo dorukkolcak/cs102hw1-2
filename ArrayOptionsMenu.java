@@ -14,7 +14,9 @@ public class ArrayOptionsMenu {
             System.out.println("5- Exit");
             value = input.nextInt();
             if (value == 1) {
-                
+                System.out.print("Enter array size:");
+                int size = input.nextInt();
+                integers = ArrayUtilities.createRandomArray(size);
                 System.out.println("Created the array.");
             }
             else if (value == 2) {
