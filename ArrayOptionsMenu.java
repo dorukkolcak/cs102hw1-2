@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class ArrayOptionsMenu {
     public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class ArrayOptionsMenu {
                 System.out.print("Enter array size:");
                 int size = input.nextInt();
                 integers = ArrayUtilities.createRandomArray(size);
-                System.out.println("Created the array.");
+                System.out.println("Created the array:");
             }
             else if (value == 2) {
                System.out.println("The max of the array is " + ArrayUtilities.max(integers));
@@ -25,11 +26,7 @@ public class ArrayOptionsMenu {
             }
             else if (value == 3) {
                 System.out.println("The average of the array is " + ArrayUtilities.findAverage(integers));
-                System.out.print("{");
-                for (int i = 0; i < integers.length; i++) {
-                    System.out.print(integers[i] + ", ");
-                }
-                System.out.print("}");
+                System.out.println("The difference array is " + Arrays.toString(ArrayUtilities.findDiffer(integers)));
             }
             else if (value == 4) {
 
@@ -39,6 +36,11 @@ public class ArrayOptionsMenu {
             }
             else {
                 System.out.println("Invalid choice, try again.");
+            }
+            
+            if (value != 5)
+            {
+                System.out.println("Array: " + Arrays.toString(integers));
             }
         }
     }
