@@ -1,7 +1,6 @@
 public class ArrayUtilities {
 
-
-    public String findAverage(int[] a){
+    public static String findAverage(int[] a){
         int sum = 0;
         for (int i = 0; i < a.length; i++){
             sum += a[i];
@@ -10,7 +9,7 @@ public class ArrayUtilities {
         result = Math.round(result);
         return Double.toString(result);
     }
-    public double[] findDiffer(int a[]){
+    public static double[] findDiffer(int a[]){
         Double average = Double.parseDouble(findAverage(a));
         double[] differArray = new double[a.length];
         for (int i = 0; i < a.length; i++){
