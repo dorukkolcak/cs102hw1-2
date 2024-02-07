@@ -15,10 +15,10 @@ public class ArrayOptionsMenu {
             System.out.println("5- Exit");
             value = input.nextInt();
             if (value == 1) {
-                System.out.print("Enter array size:");
+                System.out.print("Enter array size: ");
                 int size = input.nextInt();
                 integers = ArrayUtilities.createRandomArray(size);
-                System.out.println("Created the array:");
+                System.out.println("Created the array: ");
             }
             else if (value == 2) {
                System.out.println("The max of the array is " + ArrayUtilities.max(integers));
@@ -29,7 +29,8 @@ public class ArrayOptionsMenu {
                 System.out.println("The difference array is " + Arrays.toString(ArrayUtilities.findDiffer(integers)));
             }
             else if (value == 4) {
-
+                System.out.println("The sum of elements with odd numbered indexes is " + ArrayUtilities.sumOfOdds(integers));
+                System.out.println("The sum of elements with even numbered indexes is " + ArrayUtilities.sumOfEvens(integers));
             }
             else if (value == 5) {
                 System.out.println("Goodbye!");
