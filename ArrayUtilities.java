@@ -46,7 +46,7 @@ public class ArrayUtilities {
         int maxValue = a[0];
         for (int n : a)
         {
-            if (n < maxValue)
+            if (n > maxValue)
             {
                 maxValue = n;
             }
