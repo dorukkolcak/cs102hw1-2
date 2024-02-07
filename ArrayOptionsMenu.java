@@ -43,5 +43,6 @@ public class ArrayOptionsMenu {
                 System.out.println("Array: " + Arrays.toString(integers));
             }
         }
+        input.close();
     }
 }
