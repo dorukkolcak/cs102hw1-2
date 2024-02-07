@@ -18,5 +18,32 @@ public class ArrayUtilities {
         }
         return differArray;
     }
+
+
+    public static int min(int[] a)
+    {
+        int minValue = a[0];
+        for (int n : a)
+        {
+            if (n < minValue)
+            {
+                minValue = n;
+            }
+        }
+        return minValue;
+    }
+
+    public static int max(int[] a)
+    {
+        int maxValue = a[0];
+        for (int n : a)
+        {
+            if (n < maxValue)
+            {
+                maxValue = n;
+            }
+        }
+        return maxValue;
+    }
     
 }
